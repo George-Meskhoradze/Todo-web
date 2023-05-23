@@ -134,6 +134,12 @@ const BoxContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 20px;
+
+  @media (max-width: 800px) {
+    width: 320px;
+    height: 380px;
+    gap: 10px;
+  }
 `
 
 const InpContainer = styled.div`
@@ -142,6 +148,10 @@ const InpContainer = styled.div`
   height: 40px;
   border-radius: 10px;
   display: flex;
+
+  @media (max-width: 800px) {
+    height: 30px;
+  }
 ` 
 
 const Input = styled.input `
@@ -155,6 +165,11 @@ const Input = styled.input `
   font-weight: 400;
   font-size: 1.1rem;
   background: white;
+
+  @media (max-width: 800px) {
+    font-size: 0.9rem;
+    height: 30px;
+  }
 `
 
 const BtnText = styled.h1`
@@ -166,6 +181,10 @@ const BtnText = styled.h1`
   text-align: center;
   color: white;
   user-select: none;
+
+  @media (max-width: 800px) {
+    font-size: 1rem;
+  }
 `
 
 const Btn = styled.div`
@@ -184,6 +203,10 @@ const Btn = styled.div`
 
     background: #865801;
   }
+
+  @media (max-width: 800px) {
+    height: 30px;
+  }
 `
 
 const SavedInp =styled.div`
@@ -192,6 +215,10 @@ const SavedInp =styled.div`
   height: 480px;
   display: block;
   overflow: hidden;
+
+  @media (max-width: 800px) {
+    height: 280px;
+  }
 `
 
 const SavedContainer = styled.div`
@@ -201,6 +228,10 @@ const SavedContainer = styled.div`
   display: flex;
   margin-top: 10px;
   border-radius: 3px;
+
+  @media (max-width: 800px) {
+    height: 30px;
+  }
 `
 
 const Saved = styled.div`
@@ -213,6 +244,12 @@ const Saved = styled.div`
   font-size: 1.1rem;
   font-weight: 400;
   letter-spacing: 1px;
+
+  @media (max-width: 800px) {
+    font-size: 0.9rem;
+    padding: 5px 20px;
+    height: 30px;
+  }
 `
 
 const Del = styled.div`
@@ -228,4 +265,9 @@ const Del = styled.div`
   text-align: center;
   color: white;
   cursor: pointer;
+
+  @media (max-width: 800px) {
+    font-size: 1rem;
+    height: 30px;
+  }
 `
